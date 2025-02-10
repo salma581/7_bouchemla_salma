@@ -3,10 +3,10 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Footer from "../layout/Footer";
 import Navbar from "../components/Navbar";
 import HomePage from "../pages/HomePage";
- import Main from "../layout/Main"
+import Main from "../layout/Main"
 import ApartmentPage from "../pages/ApartmentPage";
-// import About from "../pages/About";
-// import { ErrorPageNotFound } from "../pages/ErrorPageNotFound";
+import About from "../pages/About";
+import { ErrorPageNotFound } from "../pages/ErrorPageNotFound";
 
  
 const HeaderFooterLayout = () => {
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
   {
     
     element:<HeaderFooterLayout/>,
-    errorElement: <h1>404 Not found</h1>,
+    errorElement: <ErrorPageNotFound />,
     children: [
       { path: "/",
         element: <HomePage /> 
@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
           
       {
         path: "/about",
-        element: <h1>a propos de nous</h1>
+        element: <About />
           
       }
     ]

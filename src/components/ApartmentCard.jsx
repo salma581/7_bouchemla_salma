@@ -1,7 +1,8 @@
 import React from 'react';
-import "./Apartment.scss";
+import "./ApartmentCard.scss";
 import { Link } from "react-router-dom";
-function Apartment() {
+
+function ApartmentCard() {
 return (
   <Link to= "/flat"> 
   <div className='apartment'>
@@ -11,4 +12,4 @@ return (
 );
 }
 
-export default Apartment;
+export default ApartmentCard;

@@ -1,8 +1,8 @@
 import React from 'react';
-import "./ApartmentDescription.scss";
-export function ApartmentDescription() {
+import "./DescriptionPanel.scss";
+export function DescriptionPanel() {
     return (
-        <div className="apartment__description">
+        <div className="description__panel">
         <p className="description__header">
            <span> Description</span>
            <i class="fas fa-chevron-up"></i>

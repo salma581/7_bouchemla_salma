@@ -1,12 +1,14 @@
 @use"../scss/variables"as *;
 .apartment{
-    background-image:linear-gradient(to top,$color-secondary,$color-primary);
+   background-image:url("https://picsum.photos/200");
     border-radius: 1rem;
+   background-color: $color-primary;
     flex-basis: 30%;
     display: grid;
     align-items: end;
     min-width: 200px;
     min-height: 200px;
+    background-size: cover;
     @media screen and (width <= 766px){
     .apartment{
       flex-basis: 100%;
