@@ -1,9 +1,9 @@
 import React from 'react';
 import "./ImageBanner.scss";
- function ImageBanner() {
+ function ImageBanner(props) {
     return (
         <div className="image__banner">
-                <img src='https://picsum.photos/800/400' alt='apartment'/>
+                <img src={props.imageUrl} alt='apartment'/>
             </div>
     );
 }
