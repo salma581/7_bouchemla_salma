@@ -3,8 +3,6 @@ import Banner from '../layout/Banner.jsx';
 import "./HomePage.scss";
 import ApartmentGrid from "../components/ApartmentGrid.jsx";
 
-
-
 function HomePage() {
   return (
     <>

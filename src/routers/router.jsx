@@ -21,27 +21,31 @@ const HeaderFooterLayout = () => {
   );
 };
 
-
 export const router = createBrowserRouter([
   {
-    
-    element:<HeaderFooterLayout/>,
+    // Layout principal contenant un header et un footer
+    element: <HeaderFooterLayout />,
+
     errorElement: <ErrorPageNotFound />,
+
+    // Définition des routes enfants (les pages du site)
     children: [
-      { path: "/",
-        element: <HomePage /> 
+      {
+        // Route principale (page d'accueil)
+        path: "/",
+        element: <HomePage />
       },
       
-    
       {
+        // Route pour afficher un appartement spécifique
         path: "/flat",
-        element: <ApartmentPage/>
+        element: <ApartmentPage />
       },
           
       {
+        // Route pour afficher la page "À propos"
         path: "/about",
         element: <About />
-          
       }
     ]
   }

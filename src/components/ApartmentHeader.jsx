@@ -3,7 +3,7 @@ import "./ApartmentHeader.scss";
 
 export function ApartmentHeader({flat }){
     const {name }= flat.host
-    const [firstName, lastName] =name.split(" ");
+    const [firstName, lastName] =name.split(" ");  // Séparation du prénom et du nom de famille à partir du nom complet
     return(
 <div className="apartment__header">
                 <div className="apartment__title">
