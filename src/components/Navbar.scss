@@ -8,8 +8,10 @@
     gap: 2rem;
     @media screen and (width <= 768px){
       text-transform: uppercase;
-      font-weight: 400;
+      // font-weight: 400;
+       font-size: 13px;
   }
+
     & >*:first-child{
         margin-right: auto;
     }

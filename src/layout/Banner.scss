@@ -20,3 +20,10 @@
     color:$color-tertiary;
     font-weight: 400;
 }
+@media screen and (width <= 500px) {
+    .banner_title{
+        font-size: 20px;
+        
+    }
+    
+}
